@@ -8,7 +8,7 @@
       "name": "(gdb) Launch",
       "type": "cppdbg",
       "request": "launch",
-      "program": "${workspaceFolder}/bin/gauss",
+      "program": "${workspaceFolder}/bin/ul_decomp",
       "args": [
         // "6003",
         //"3",
@@ -21,8 +21,8 @@
       "MIMode": "gdb",
       // "additionalSOLibSearchPath": "/usr/lib/debug/**",
       "sourceFileMap": {
-        "/build/gsl-MlxlPo/gsl-2.1+dfsg": "${workspaceFolder}/tmp/gsl-2.1+dfsg",
-        "/build/glibc-LK5gWL/glibc-2.23": "${workspaceFolder}/tmp/glibc-2.23"
+        // "/build/gsl-MlxlPo/gsl-2.1+dfsg": "${workspaceFolder}/tmp/gsl-2.1+dfsg",
+        // "/build/glibc-LK5gWL/glibc-2.23": "${workspaceFolder}/tmp/glibc-2.23"
       },
       "setupCommands": [
         {
