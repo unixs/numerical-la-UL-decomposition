@@ -12,6 +12,7 @@
   "[fortran_fixed-form]": {
     "editor.rulers": [
       5, 6, 72
-    ]
-  }
+    ],
+    "editor.folding": false
+  },
 }
