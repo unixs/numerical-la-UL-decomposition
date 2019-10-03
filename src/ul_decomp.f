@@ -31,11 +31,13 @@ C           Fill U row cell by cell
             U(I, J) = A(I, J) - S
 
 C           Fill L column cell by cell & use previously calculated cell
-            S = 0
-            DO 16 K = 1, J - 1
-              S = S + L(I, K) * U(K, J)
-16          CONTINUE
-            L(J, I) = (1 / U(J, J)) * (A(J, I) - S)
+            IF (J.GT.I) THEN
+              S = 0
+              DO 16 K = 1, J - 1
+                S = S + L(I, K) * U(K, J)
+  16          CONTINUE
+              L(J, I) = (1 / U(I, I)) * (A(J, I) - S)
+            END IF
 
 20        CONTINUE
 30      CONTINUE
