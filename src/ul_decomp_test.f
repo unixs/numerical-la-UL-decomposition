@@ -11,6 +11,7 @@ C     UL Matrix decomposition
 
         CALL UL_DECOMP(N, A, B, L, U, Y, X)
 
+
 C       Print results:
         PRINT 520, "A"
         DO 100 I = 1, N
@@ -37,6 +38,6 @@ C       Print results:
         PRINT 510, (X(I), I = 1, N)
 
 500     FORMAT (1X, /A, 1X, "VECTOR:")
-510     FORMAT (100(1X, F5.2))
+510     FORMAT (100(1X, F6.3))
 520     FORMAT (1X, /A, 1X, "MATRIX:")
       END

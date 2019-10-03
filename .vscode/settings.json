@@ -13,6 +13,8 @@
     "editor.rulers": [
       5, 6, 72
     ],
-    "editor.folding": false
+    "editor.folding": false,
+    "editor.renderIndentGuides": false,
+    "editor.renderWhitespace": "boundary"
   },
 }
